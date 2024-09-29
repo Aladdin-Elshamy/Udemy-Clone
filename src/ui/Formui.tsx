@@ -40,14 +40,14 @@ const Formui = () => {
     return (
 
         <> 
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 w-6/12 ">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <input
               type="text"
               {...register('firstName')}
-              placeholder="First Name"
-              className="border p-2 w-full border-black black"
+              placeholder="First Name *"
+              className="border p-2 w-full border-black placeholder-black font-medium h-14"
             />
             {errors.firstName && <p className="text-red-500">{errors.firstName.message}</p>}
           </div>
@@ -56,8 +56,8 @@ const Formui = () => {
             <input
               type="text"
               {...register('lastName')}
-              placeholder="Last Name"
-              className="border p-2 w-full"
+              placeholder="Last Name *"
+              className="border p-2 w-full border-black placeholder-black font-medium h-14"
             />
             {errors.lastName && <p className="text-red-500">{errors.lastName.message}</p>}
           </div>
@@ -66,30 +66,30 @@ const Formui = () => {
         <input
           type="email"
           {...register('email')}
-          placeholder="Work Email"
-          className="border p-2 w-full"
+          placeholder="Work Email *"
+          className="border p-2 w-full border-black placeholder-black font-medium h-14"
         />
         {errors.email && <p className="text-red-500">{errors.email.message}</p>}
   
         <input
           type="text"
           {...register('phone')}
-          placeholder="Phone Number"
-          className="border p-2 w-full"
+          placeholder="Phone Number *"
+          className="border p-2 w-full border-black placeholder-black font-medium h-14"
         />
         {errors.phone && <p className="text-red-500">{errors.phone.message}</p>}
   
         <input
           type="text"
           {...register('companyName')}
-          placeholder="Company Name"
-          className="border p-2 w-full"
+          placeholder="Company Name *"
+          className="border p-2 w-full border-black placeholder-black font-medium h-14"
         />
         {errors.companyName && <p className="text-red-500">{errors.companyName.message}</p>}
   
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <select {...register('companySize')} className="border p-2 w-full">
+            <select {...register('companySize')} className="border p-2 w-full border-black placeholder-black font-medium h-14">
               <option value="">Select Company Size</option>
               <option value="small">1-50</option>
               <option value="medium">51-200</option>
@@ -99,7 +99,7 @@ const Formui = () => {
           </div>
   
           <div>
-            <select {...register('numberOfPeople')} className="border p-2 w-full">
+            <select {...register('numberOfPeople')} className="border p-2 w-full border-black placeholder-black font-medium h-14">
               <option value="">Select Number of People</option>
               <option value="1-10">1-10</option>
               <option value="11-50">11-50</option>
@@ -112,12 +112,12 @@ const Formui = () => {
         <input
           type="text"
           {...register('jobTitle')}
-          placeholder="Job Title"
-          className="border p-2 w-full"
+          placeholder="Job Title *"
+          className="border p-2 w-full border-black placeholder-black font-medium"
         />
         {errors.jobTitle && <p className="text-red-500">{errors.jobTitle.message}</p>}
   
-        <select {...register('jobLevel')} className="border p-2 w-full">
+        <select {...register('jobLevel')} className="border p-2 w-full border-black placeholder-black font-medium h-14">
           <option value="">Select Job Level</option>
           <option value="junior">Junior</option>
           <option value="mid">Mid</option>
@@ -128,10 +128,12 @@ const Formui = () => {
         <textarea
           {...register('trainingNeeds')}
           placeholder="What are your organization's training needs? (Optional)"
-          className="border p-2 w-full"
+          className="border p-2 w-full border-black placeholder-black font-medium row-span-2 "
         />
   
-        <button type="submit" className=" text-white p-2 w-full" style={{background:'black'}}>Submit</button>
+        <button type="submit" className=" text-white p-2 w-full h-14 " style={{background:'black'}}>Submit</button>
+     
+     <p className='text-xs'>By signing up, you agree to our terms and privacy policy. You agree that we can contact you about Udemy and use data from third parties to personalize your experience.</p>
       </form>
     
   </>

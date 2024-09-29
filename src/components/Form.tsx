@@ -1,4 +1,5 @@
 import Formui from "../ui/Formui"
+import Section from "../ui/Section"
 
 interface IProps{
 
@@ -6,8 +7,8 @@ interface IProps{
 const Form= ({}: IProps) => {
     return (
 
-        <div className="container mx-auto p-4 flex justify-between">
-             <h1 className="text-2xl font-bold mb-4">Get Your Demo</h1>
+        <div className=" m-auto p-4 flex justify-between w-9/12">
+           <Section />
             <Formui />
         </div>
     )
