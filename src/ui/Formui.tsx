@@ -47,7 +47,7 @@ const Formui = () => {
               type="text"
               {...register('firstName')}
               placeholder="First Name"
-              className="border p-2 w-full"
+              className="border p-2 w-full border-black black"
             />
             {errors.firstName && <p className="text-red-500">{errors.firstName.message}</p>}
           </div>
@@ -131,7 +131,7 @@ const Formui = () => {
           className="border p-2 w-full"
         />
   
-        <button type="submit" className="bg-blue-500 text-white p-2 w-full">Submit</button>
+        <button type="submit" className=" text-white p-2 w-full" style={{background:'black'}}>Submit</button>
       </form>
     
   </>
