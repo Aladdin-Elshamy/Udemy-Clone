@@ -1,6 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
+import NestedSidebarReducer from './features/NestedSidebar/NestedSidebarSlice'
+import SearchReducer from './features/Search/SearchSlice'
 export const store = configureStore({
   reducer: {
+    nestedSidebar: NestedSidebarReducer,
+    search: SearchReducer
+
   },
 })
 
