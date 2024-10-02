@@ -1,4 +1,5 @@
 import Formui from "../ui/Formui"
+import Logossection from "../ui/logossection"
 import Section from "../ui/Section"
 
 interface IProps{
@@ -7,9 +8,13 @@ interface IProps{
 const Form= ({}: IProps) => {
     return (
 
-        <div className=" m-auto p-4  flex md:flex-row justify-between md:w-9/12  w-full flex-col  ">
-           <Section  />
+        <div>
+            <div className=" m-auto p-4  flex flex-col md:flex-row justify-between md:w-9/12  w-full">
+            <Section  /> 
             <Formui />
+            </div>
+          
+            <Logossection  />
         </div>
     )
 }

@@ -42,7 +42,7 @@ const Formui = () => {
     return (
 
         <> 
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 md:w-6/12 w-full  h-full selection:bg-yellow-200 selection:text-gray-700">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 md:w-6/12 w-full  h-full selection:bg-yellow-200 selection:text-gray-700 order-2">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <input
