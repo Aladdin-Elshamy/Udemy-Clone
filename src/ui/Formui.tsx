@@ -1,5 +1,5 @@
 // import React from 'react';
-import { useForm } from 'react-hook-form'
+import { useForm  } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 
@@ -33,11 +33,12 @@ const validationSchema = Yup.object().shape({
 });
 
 const Formui = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm<IFormInputs>({
+    const { register, handleSubmit,reset, formState: { errors } } = useForm<IFormInputs>({
         resolver: yupResolver(validationSchema),
       });
     const onSubmit = (data: IFormInputs) => {
         console.log('Form Data: ', data);
+        reset()
       };
     return (
 
