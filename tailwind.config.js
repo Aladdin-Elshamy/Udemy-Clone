@@ -21,6 +21,7 @@ export default {
         'primary': '#4a29a4',
         'black':"#2d2f31",
         'link':"#4b2cab",
+         customColor: '#199fa3'
       }
     },
   },
