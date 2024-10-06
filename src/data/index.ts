@@ -1,4 +1,4 @@
-import { IImage } from "../interfaces";
+import { ICategory, IImage, ILoginData } from "../interfaces";
 
 export const images: IImage[] = [
     {
@@ -12,7 +12,7 @@ export const images: IImage[] = [
 
 ]
 
-export const udemyCategories = [
+export const udemyCategories: ICategory[] = [
    
     {
       
@@ -85,7 +85,7 @@ export const udemyCategories = [
     },
   ];
   
-export const udemyCategoriesDesktop =[
+export const udemyCategoriesDesktop: ICategory[] =[
   {
     category: "Development",
     subcategories: [
@@ -142,4 +142,20 @@ export const udemyCategoriesDesktop =[
       }
     ]
   }
+]
+
+export const LoginData: ILoginData[] = [
+    {
+        type: "email",
+        name: "email",
+        id: "email",
+        label: "Email",
+
+    },
+    {
+        type: "password",
+        name: "password",
+        id: "password",
+        label: "Password",
+    }
 ]

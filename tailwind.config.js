@@ -15,12 +15,17 @@ export default {
       },
       center:true
     },
+    fontFamily: {
+      'sans': ['Montserrat', 'sans-serif'],
+    },
     extend: {
       colors: {
         'hover': '#9d42d7',
         'primary': '#4a29a4',
         'black':"#2d2f31",
         'link':"#4b2cab",
+        'purple':'#a436f1',
+        'darkPurple':'#8610d8',
       }
     },
   },
