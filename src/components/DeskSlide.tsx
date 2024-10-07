@@ -32,7 +32,7 @@ export default function DeskSlide({ image, imageIndex, index }: ISlide) {
       {/* Second Box */}
       {index === 1 && (
         <SlideBox
-          width="w-[450px]"
+          width="w-[500px]"
           title="Skills that drive you forward"
           description="Technology and the world of work change fast — with us, you're faster. Get the skills to achieve goals and stay competitive."
         >
