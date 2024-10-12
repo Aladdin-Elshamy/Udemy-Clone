@@ -17,10 +17,10 @@ export default {
     },
     extend: {
       colors: {
-        'hover': '#9d42d7',
-        'primary': '#4a29a4',
+        'link': '#9d42d7',
+        'hover': '#8710D8',
         'black':"#2d2f31",
-        'link':"#4b2cab",
+        'secund-black': "#6b6f73",
       }
     },
   },
